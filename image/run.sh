@@ -39,7 +39,7 @@ fi
 
 
 # display slapd build info
-slapd -VVV 2>&1 | log INFO || true
+/usr/sbin/slapd -VVV 2>&1 | log INFO || true
 
 
 # Limit maximum number of open file descriptors otherwise slapd consumes two
